@@ -1,0 +1,41 @@
+// This will hold all our scss variables all our scss mixings
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+// Defining color variables
+$text-color: #b1bdb4;
+
+$black-primary: #16181b;
+$black-secondary: #121417;
+$border-color: #4c4c4c;
+
+$breakpoint-medium: 1224px;
+$breakpoint-small: 520px;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: $black-primary;
+   background-attachment: fixed;
+   color: $text-color;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.1px;
+}
+
+// This mixing/function makes sure that the content is restricted
+// to $number lines and doesnt exceed them even if it's longer
+@mixin line-clamp($number) {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: $number;
+   -webkit-box-orient: vertical;
+}
+
+// This part is here to hide the side scrollbar
+::-webkit-scrollbar {
+   width: 0px;
+}
