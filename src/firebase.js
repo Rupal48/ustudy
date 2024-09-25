@@ -3,7 +3,7 @@ import { getAuth } from 'firebase/auth';
 
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_YT_API_KEY_,
+    apiKey: process.env.REACT_APP_YT_API_KEY,
     authDomain: "ustudy4444.firebaseapp.com",
     projectId: "ustudy4444",
     storageBucket: "ustudy4444.appspot.com",
